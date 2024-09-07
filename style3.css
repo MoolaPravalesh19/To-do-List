@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+#container{
+    border: 2px solid rgb(12, 12, 12);
+    border-radius: 10px;
+    padding:0.5em;
+    width: 27em;
+    background-color: beige;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20230703/pngtree-3d-render-of-a-to-do-list-image_3789128.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#add-text{
+    padding: 0.8em 1em 0.8em 1em;
+    width: 75%;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+h1{
+    text-align: center;
+}
+#input{
+    display: flex;
+    gap: 7px;
+    margin: 1em 2em;
+    width: 92%;
+}
+#add{
+    padding: 0.8em 1em 0.8em 1em;
+    background-color: rgb(14, 163, 14);
+    color: white;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgb(190, 185, 185);
+    cursor: pointer;
+}
+.to-do{
+    width: 15.5em;
+}
+#card{
+    display: flex;
+    gap: 1.5em;
+    background-color: white;
+    padding: 0.5em;
+    border-radius: 10px;
+    border: 2px solid rgb(16, 16, 16);
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+.part2{
+    display: flex;
+    gap: 10px;
+}
+#edit{
+    color: rgb(47, 75, 255);
+    font-weight: 700;
+    cursor: pointer;
+}
+#remove{
+    color: red;
+    font-weight: 700;
+    cursor: pointer;
+}
+@media(max-width:450px){
+    #container{
+        width: 24em;
+    }
+    .to-do{
+        width: 12.5em;
+    }
+}
+@media(max-width:397px){
+    #container{
+        width: 22em;
+    }
+    .to-do{
+        width: 11.5em;
+    }
+    #input{
+        margin: 1em 1.2em;
+    }
+}
